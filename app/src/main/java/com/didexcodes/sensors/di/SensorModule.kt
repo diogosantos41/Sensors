@@ -3,8 +3,8 @@ package com.didexcodes.sensors.di
 import android.app.Application
 import com.didexcodes.sensors.core.AccelerometerSensor
 import com.didexcodes.sensors.core.LightSensor
-import com.didexcodes.sensors.core.MeasurableSensor
 import com.didexcodes.sensors.core.ProximitySensor
+import com.didexcodes.sensors.core.StepCounterSensor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -31,5 +31,11 @@ object SensorModule {
     @Singleton
     fun provideProximitySensor(app: Application): ProximitySensor {
         return ProximitySensor(app)
+    }
+
+    @Provides
+    @Singleton
+    fun provideStepCounterSensor(app: Application): StepCounterSensor {
+        return StepCounterSensor(app)
     }
 }

@@ -3,7 +3,6 @@ package com.didexcodes.sensors.core
 import android.content.Context
 import android.content.pm.PackageManager
 import android.hardware.Sensor
-import com.didexcodes.sensors.core.AndroidSensor
 
 class LightSensor(context: Context) : AndroidSensor(
     context = context,
@@ -21,4 +20,10 @@ class ProximitySensor(context: Context) : AndroidSensor(
     context = context,
     sensorFeature = PackageManager.FEATURE_SENSOR_PROXIMITY,
     sensorType = Sensor.TYPE_PROXIMITY
+)
+
+class StepCounterSensor(context: Context) : AndroidSensor(
+    context = context,
+    sensorFeature = PackageManager.FEATURE_SENSOR_STEP_COUNTER,
+    sensorType = Sensor.TYPE_STEP_COUNTER
 )

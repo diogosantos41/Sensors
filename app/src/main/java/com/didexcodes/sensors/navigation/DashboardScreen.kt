@@ -53,6 +53,11 @@ fun DashboardScreen(navController: NavController) {
             title = "Proximity Sensor",
             subtitle = "Measures the proximity of an object in cm relative to the view screen of a device.",
             onClick = { navController.navigate(Destination.ProximitySensorScreen.route) })
+        Spacer(modifier = Modifier.height(10.dp))
+        Item(
+            title = "Step Counter Sensor",
+            subtitle = "Provides the number of steps taken by the user",
+            onClick = { navController.navigate(Destination.StepCounterSensorScreen.route) })
     }
 }
 

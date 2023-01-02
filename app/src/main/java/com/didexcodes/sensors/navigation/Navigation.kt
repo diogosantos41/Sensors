@@ -8,10 +8,10 @@ import com.didexcodes.sensors.feature_accelerometersensor.AccelerometerSensorScr
 import com.didexcodes.sensors.feature_lightsensor.LightSensorScreen
 import com.didexcodes.sensors.feature_proximitysensor.ProximitySensorScreen
 import com.didexcodes.sensors.feature_shakeevent.ShakeEventScreen
+import com.didexcodes.sensors.feature_stepcountersensor.StepCounterSensorScreen
 
 @Composable
 fun Navigation() {
-
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Destination.DashboardScreen.route)
     {
@@ -29,6 +29,9 @@ fun Navigation() {
         }
         composable(route = Destination.ProximitySensorScreen.route) {
             ProximitySensorScreen(navController)
+        }
+        composable(route = Destination.StepCounterSensorScreen.route) {
+            StepCounterSensorScreen(navController)
         }
     }
 }

@@ -5,5 +5,6 @@ sealed class Destination(val route: String) {
     object LightSensorScreen: Destination(route = "LightSensorScreen")
     object AccelerometerSensorScreen: Destination(route = "AccelerometerSensorScreen")
     object ShakeEventScreen: Destination(route = "ShakeEventScreen")
-    object ProximitySensorScreen: Destination(route = "ProximitySensorScreen")
+    object ProximitySensorScreen : Destination(route = "ProximitySensorScreen")
+    object StepCounterSensorScreen : Destination(route = "StepCounterSensorScreen")
 }

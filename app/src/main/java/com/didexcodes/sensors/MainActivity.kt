@@ -1,11 +1,14 @@
 package com.didexcodes.sensors
 
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.didexcodes.sensors.navigation.Navigation
 import com.didexcodes.sensors.ui.theme.SensorsTheme
 import dagger.hilt.android.AndroidEntryPoint
+
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

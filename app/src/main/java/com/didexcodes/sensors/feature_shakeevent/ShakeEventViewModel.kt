@@ -10,7 +10,6 @@ import com.didexcodes.sensors.core.SensorBaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlin.math.abs
-import kotlin.math.sqrt
 
 @HiltViewModel
 class ShakeEventViewModel @Inject constructor(accelerometerSensor: AccelerometerSensor) :
