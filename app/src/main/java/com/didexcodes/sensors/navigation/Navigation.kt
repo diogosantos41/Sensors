@@ -6,6 +6,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.didexcodes.sensors.feature_accelerometersensor.AccelerometerSensorScreen
 import com.didexcodes.sensors.feature_lightsensor.LightSensorScreen
+import com.didexcodes.sensors.feature_proximitysensor.ProximitySensorScreen
+import com.didexcodes.sensors.feature_shakeevent.ShakeEventScreen
 
 @Composable
 fun Navigation() {
@@ -17,13 +19,16 @@ fun Navigation() {
             DashboardScreen(navController = navController)
         }
         composable(route = Destination.LightSensorScreen.route) {
-            LightSensorScreen()
+            LightSensorScreen(navController)
         }
         composable(route = Destination.AccelerometerSensorScreen.route) {
-            AccelerometerSensorScreen()
+            AccelerometerSensorScreen(navController)
+        }
+        composable(route = Destination.ShakeEventScreen.route) {
+            ShakeEventScreen(navController)
         }
         composable(route = Destination.ProximitySensorScreen.route) {
+            ProximitySensorScreen(navController)
         }
-
     }
 }

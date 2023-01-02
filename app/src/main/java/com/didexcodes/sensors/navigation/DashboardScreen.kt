@@ -43,6 +43,16 @@ fun DashboardScreen(navController: NavController) {
             title = "Accelerometer Sensor",
             subtitle = "Measures the acceleration force in m/s2 that is applied to a device on all three physical axes (x, y, and z), including the force of gravity.",
             onClick = { navController.navigate(Destination.AccelerometerSensorScreen.route) })
+        Spacer(modifier = Modifier.height(10.dp))
+        Item(
+            title = "Shake Event",
+            subtitle = "Detect shake events using the Accelerometer Sensor",
+            onClick = { navController.navigate(Destination.ShakeEventScreen.route) })
+        Spacer(modifier = Modifier.height(10.dp))
+        Item(
+            title = "Proximity Sensor",
+            subtitle = "Measures the proximity of an object in cm relative to the view screen of a device.",
+            onClick = { navController.navigate(Destination.ProximitySensorScreen.route) })
     }
 }
 

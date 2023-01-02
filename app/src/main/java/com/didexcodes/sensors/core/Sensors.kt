@@ -16,3 +16,9 @@ class AccelerometerSensor(context: Context) : AndroidSensor(
     sensorFeature = PackageManager.FEATURE_SENSOR_ACCELEROMETER,
     sensorType = Sensor.TYPE_ACCELEROMETER
 )
+
+class ProximitySensor(context: Context) : AndroidSensor(
+    context = context,
+    sensorFeature = PackageManager.FEATURE_SENSOR_PROXIMITY,
+    sensorType = Sensor.TYPE_PROXIMITY
+)
